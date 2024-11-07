@@ -89,6 +89,9 @@ class CpuDockApp(wmdocklib.DockApp):
 
     def main_loop(self):
 
+        # Initialize with stats directly
+        self._set_cpu()
+
         count = 0
         while True:
             if count > 360:
